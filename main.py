@@ -1,16 +1,17 @@
-destination = input("What is your preferred accommodation choice, Hotel or Resort? ").lower()
+user_decide = input("Hello, would you like some movie recommendation tonight? ").lower()
 
-if destination == 'resort':
-    max_budget = int(input("What is your maximum budget? "))
-    if max_budget >= 350:
-        print("The Six Senses Resort would be a perfect choice")
-    else:
-        print("Check out Four Seasons Resort")
+if user_decide == "yes":
+    print("Lovely, make a choice from the next prompt.")
 
-else:
-    print("Check out the nearest Hilton")
-
-
-
-
+    movie_choice = input("Which movie genre would you prefer to watch from comedy, action or thriller? ").lower()
     
+    if movie_choice == "comedy":
+        print("For tonight we would recommend the movie, Hangover Trilogy!, enjoy")
+    elif movie_choice == "action":
+        print("You might enjoy some packed action like Top Gun!, enjoy")
+    elif movie_choice == "thriller":
+        print("A great thriller choice would be Inception!, enjoy")
+    else:
+        print("Sorry, only pick from the available genre.")
+else:
+    print("Looks like you are tired tonight, good night")
