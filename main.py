@@ -1,13 +1,12 @@
-product_1 = int(input("What is the cost of product_A? "))
-product_2 = int(input("What is the cost of product_B? "))
-product_3 = int(input("What is the cost of product_C? "))
+print("Could you take out time to rate the product/service out of 1 - 10")
 
-total = product_1 + product_2 + product_3
+rate = int(input("Rate 1 to 10 according to your satisfaction at the store: "))
 
-if product_1 < product_2 and product_2 < product_3:
-    total_cost = total * 0.5
-    print("Congrats you have a %50 discount on your purchase!", total_cost)
-
-if product_1 > product_2 and product_2 > product_3:
-    total_cost = total * 0.66
-    print("Congrats you have a 66% discount on your purchase!", total_cost)
+if rate >=9:
+    print("Thanks for the patronage")
+elif rate < 9 and rate >=5:
+    suggest = input("Do you mind telling us, how we can make your experience much better? ")
+    print(suggest+".")
+    print("We will do better")
+else:
+    print("We are sorry to hear that!")
