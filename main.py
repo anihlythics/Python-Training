@@ -1,12 +1,21 @@
-print("Could you take out time to rate the product/service out of 1 - 10")
+# counter = 0
 
-rate = int(input("Rate 1 to 10 according to your satisfaction at the store: "))
+# while counter < 3:
+#     name = input("Enter your name: ")
+#     print("Congrats!",name,"You saved 20%")
+#     counter += 1
+# print("All done")
+     
 
-if rate >=9:
-    print("Thanks for the patronage")
-elif rate < 9 and rate >=5:
-    suggest = input("Do you mind telling us, how we can make your experience much better? ")
-    print(suggest+".")
-    print("We will do better")
-else:
-    print("We are sorry to hear that!")
+tries = 0 
+
+code = ""
+
+while tries < 5 and code != 'python':
+    code = input("Enter a programming language: ")
+    tries += 1
+
+if code == 'python':
+    print("It took you",tries,"number of tries")
+
+
